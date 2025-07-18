@@ -13,7 +13,6 @@
         <xpath expr="//div[hasclass('btn-light')]//img[hasclass('avatar')]" position="after">
             <div style="margin-left: 20px" class="d-inline-block">
                 <h5 class="name username"><t t-esc="username"/></h5>
-                <p class="mail">clark@zmail.com</p>
             </div>
         </xpath>
     </t>
