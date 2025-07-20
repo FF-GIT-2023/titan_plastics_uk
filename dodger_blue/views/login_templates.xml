@@ -25,4 +25,10 @@
             <div class="cybro-sidebar"/>
         </xpath>
     </template>
+    <template inherit_id="web.login_layout"
+              id="weblogin_layout">
+        <xpath expr="//t/div/div/div[hasclass('card-body')]/div[2]/a" position="replace">
+            <a href="https://www.odoo.com?utm_source=db&amp;utm_medium=auth" target="_blank">Powered by <span>Smatek</span></a>
+        </xpath>
+    </template>
 </odoo>
