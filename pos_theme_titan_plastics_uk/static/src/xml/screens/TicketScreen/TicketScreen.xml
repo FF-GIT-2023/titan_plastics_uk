@@ -12,5 +12,9 @@
                 Back
             </button>
         </xpath>
+        <xpath expr="//button[@class='button validation load-order-button w-100 btn btn-lg btn-primary rounded-0 fw-bolder py-3']/span"
+               position="replace">
+                <span class="fs-1 d-block">Confirm Order</span>
+        </xpath>
     </t>
 </templates>
