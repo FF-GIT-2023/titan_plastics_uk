@@ -498,10 +498,6 @@
     height: 65% !important;
 }
 
-/*. lg-screen .input-group .form-control input{
-    min-width:0px !important;
-}*/
-
 /* Background Color */
 .pos .rightpane {
    background-color: #e2eafc !important;
@@ -525,7 +521,7 @@
 }
 .pos .payment-screen .title-category {
    background-color: #e2eafc !important;
-   font-size: 30px !important;
+   font-size: 20px !important;
    font-weight: bolder !important;
 }
 
@@ -539,7 +535,7 @@
   border-color: #494cab !important;
   color: #fff !important;
   font-weight: bolder !important;
-  font-size: 30px !important;
+  font-size: 20px !important;
 }
 .pos .payment-screen .payment-name {
    margin-left: 10px !important;
@@ -550,41 +546,6 @@
 .pos .payment-screen .right-content {
    background-color: #e2eafc !important;
 }
-/*
-.pos .payment-screen .payment-name {
-   margin-left: 10px !important;
-   font-size: 20px !important;
-}
-.pos .payment-screen .right-content .fa-user {
-   font-size: 20px !important;
-}
-.pos .payment-screen .right-content .partner-name {
-   font-size: 20px !important;
-}
-.pos .payment-screen .right-content .fa-file-text-o {
-   font-size: 20px !important;
-}
-*/
-
-/*Second Product Screen*/
-/*.pos .rightpane {
-   background-color: #f4f4ed !important;
-}
-.pos .leftpane {
-   background-color: #f4f4ed !important;
-}
-.pos .product-screen {
-   background-color: #f4f4ed !important;
-}
-.pos .payment-screen .top-content {
-   background-color: #f4f4ed !important;
-}
-.pos .payment-screen .left-content {
-   background-color: #f4f4ed !important;
-}
-.pos .payment-screen .right-content {
-   background-color: #f4f4ed !important;
-}*/
 
 .pos .rightpane .product-name {
     font-size: 20px !important;
@@ -638,7 +599,10 @@
   color: #007bff !important;
 }
 .pos .leftpane .pads .subpads .numpad .fw-bolder {
-  font-size: 25px !important;
+  font-size: 20px !important;
+}
+.btn-light.active {
+   background: linear-gradient(to right bottom, rgb(61 72 142), rgb(63 54 128)) !important;
 }
 .pos .leftpane .control-button {
   flex: 1 1 29%;
