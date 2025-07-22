@@ -10,7 +10,7 @@
         </xpath>
 
         <xpath expr="//div[hasclass('pos-receipt')]/div[8]/img" position="replace">
-            <img id="posqrcode" t-att-src="props.data.pos_qr_code" class="pos-receipt-qrcode" style="height:100px !important;width:100px !important;"/>
+            <img id="posqrcode" t-att-src="props.data.pos_qr_code" class="pos-receipt-qrcode" style="height:100px !important;"/>
         </xpath>
     </t>
 </templates>
