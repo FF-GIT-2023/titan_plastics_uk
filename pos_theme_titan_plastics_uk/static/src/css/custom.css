@@ -616,3 +616,8 @@
 .pos .leftpane .pads .set-partner {
   font-size: 30px !important;
 }
+.pos-receipt .pos-receipt-qrcode {
+  display: block;
+  margin: 0 auto;
+  height:100px !important;
+}
