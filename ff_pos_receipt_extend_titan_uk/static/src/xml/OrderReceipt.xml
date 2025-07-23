@@ -1,30 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <templates id="template" xml:space="preserve">
     <t t-inherit="point_of_sale.OrderReceipt" t-inherit-mode="extension" owl="1">
-        <xpath expr="//div[@class='pos-receipt']/div[@class='pos-receipt-taxes']" position="replace">
-            <div t-if="props.data.tax_details.length > 0" class="pos-receipt-taxes">
-                <span />
-                <span>Tax</span>
-                <span>Amount</span>
-                <span>Base</span>
-                <span>Total</span>
-                <t t-foreach="props.data.tax_details" t-as="tax" t-key="tax.tax.id">
-                    <span t-esc="tax.tax.letter || ''"/>
-                    <span t-if="tax.tax.amount_type != 'fixed'"><t t-esc="tax.tax.amount"/>%</span>
-                    <span t-else="" t-esc="tax.tax.name"/>
-                    <span t-esc="props.formatCurrency(tax.amount, true)" />
-                    <span t-esc="props.formatCurrency(tax.base, true)" />
-                    <span t-esc="props.formatCurrency(tax.amount + tax.base, true)" />
-                </t>
-                <t t-if="props.data.tax_details.length > 1">
-                    <span />
-                    <span />
-                    <span t-esc="props.formatCurrency(props.data.amount_tax, true)" />
-                    <span t-esc="props.formatCurrency(props.data.total_without_tax, true)" />
-                    <span t-esc="props.formatCurrency(props.data.amount_total, true)" />
-                </t>
-            </div>
-        </xpath>
         <xpath expr="//div[@class='pos-receipt']/div[12]" position="replace">
             <div class="pos-receipt-order-data">
                 <p>Powered by Smatek</p>
