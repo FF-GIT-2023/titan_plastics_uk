@@ -46,6 +46,7 @@
             'pos_return_barcode/static/src/xml/return_product_template.xml',
             'pos_return_barcode/static/src/xml/barcode_popup.xml',
             'pos_return_barcode/static/src/xml/order_receipt.xml',
+            'pos_return_barcode/static/src/css/pos_receipt.css',
         ],
     },
     'images': ['static/description/banner.jpg'],
