@@ -12,6 +12,7 @@
     "assets": {
         "point_of_sale._assets_pos": [
             "ff_pos_receipt_extend_titan_uk/static/src/xml/OrderReceipt.xml",
+            "ff_pos_receipt_extend_titan_uk/static/src/css/pos_receipt.css",
         ]
     },
     "license": "LGPL-3",
