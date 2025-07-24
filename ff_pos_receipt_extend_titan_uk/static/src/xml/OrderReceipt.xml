@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <templates id="template" xml:space="preserve">
-    <t t-inherit="point_of_sale.OrderReceipt" t-inherit-mode="extension">
+    <t t-name="ff_pos_receipt_extend_titan_uk.OrderReceipt" t-inherit="point_of_sale.OrderReceipt" t-inherit-mode="extension">
         <xpath expr="//div[@class='pos-receipt']/div[@class='paymentlines']" position="replace">
             <div class="paymentlines" t-foreach="props.data.paymentlines" t-as="line" t-key="line_index">
                 Paid By : <t t-esc="line.name"/>
