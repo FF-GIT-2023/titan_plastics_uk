@@ -1,0 +1,9 @@
+.order-id {
+  text-align: left !important;
+  font-size: 75% !important;
+}
+.pos-receipt .pos-receipt-qrcode {
+  display: block;
+  margin: 0 auto;
+  height:100px !important;
+}
