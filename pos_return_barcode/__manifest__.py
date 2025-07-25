@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 ###############################################################################
 #
 #    Cybrosys Technologies Pvt. Ltd.
@@ -20,38 +19,38 @@
 #
 ###############################################################################
 {
-    'name': 'POS Return Barcode',
-    'version': '17.0.1.0.1',
-    'summary': """This module in Odoo 17 allows to  return product effortless 
+    "name": "POS Return Barcode",
+    "version": "17.0.1.0.1",
+    "summary": """This module in Odoo 17 allows to  return product effortless
      via receipt barcode scanning.""",
-    'description': """The POS Return Barcode module in Odoo 17 streamlines the
+    "description": """The POS Return Barcode module in Odoo 17 streamlines the
      return process by enabling users to return products through the scanning
       of the receipt barcode""",
-    'category': 'Point of Sale',
-    'author': 'Cybrosys Techno Solutions',
-    'company': 'Cybrosys Techno Solutions',
-    'maintainer': 'Cybrosys Techno Solutions',
-    'website': "https://www.cybrosys.com",
-    'depends': ['point_of_sale'],
-    'data': [
-        'views/res_config_settings_views.xml',
-        'views/pos_order_views.xml',
+    "category": "Point of Sale",
+    "author": "Cybrosys Techno Solutions",
+    "company": "Cybrosys Techno Solutions",
+    "maintainer": "Cybrosys Techno Solutions",
+    "website": "https://www.cybrosys.com",
+    "depends": ["point_of_sale"],
+    "data": [
+        "views/res_config_settings_views.xml",
+        "views/pos_order_views.xml",
     ],
-    'assets': {
-        'point_of_sale._assets_pos': [
-            'pos_return_barcode/static/src/js/return_product.js',
-            'pos_return_barcode/static/src/js/order.js',
-            'pos_return_barcode/static/src/js/barcode_popup.js',
-            'pos_return_barcode/static/src/js/ticket_screen.js',
-            'pos_return_barcode/static/src/xml/return_product_template.xml',
-            'pos_return_barcode/static/src/xml/barcode_popup.xml',
-            'pos_return_barcode/static/src/xml/order_receipt.xml',
-            'pos_return_barcode/static/src/css/pos_receipt.css',
+    "assets": {
+        "point_of_sale._assets_pos": [
+            "pos_return_barcode/static/src/js/return_product.js",
+            "pos_return_barcode/static/src/js/order.js",
+            "pos_return_barcode/static/src/js/barcode_popup.js",
+            "pos_return_barcode/static/src/js/ticket_screen.js",
+            "pos_return_barcode/static/src/xml/return_product_template.xml",
+            "pos_return_barcode/static/src/xml/barcode_popup.xml",
+            "pos_return_barcode/static/src/xml/order_receipt.xml",
+            "pos_return_barcode/static/src/css/pos_receipt.css",
         ],
     },
-    'images': ['static/description/banner.jpg'],
-    'license': "AGPL-3",
-    'installable': True,
-    'application': False,
-    'auto_install': False,
+    "images": ["static/description/banner.jpg"],
+    "license": "AGPL-3",
+    "installable": True,
+    "application": False,
+    "auto_install": False,
 }

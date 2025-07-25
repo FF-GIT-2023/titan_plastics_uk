@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 #############################################################################
 #
 #    Cybrosys Technologies Pvt. Ltd.
@@ -23,35 +22,41 @@ from odoo import api, fields, models
 
 class PosOrder(models.Model):
     """Inherited pos order to add some fields"""
+
     _inherit = "pos.order"
 
-    barcode = fields.Char(string="Barcode", readonly=True,
-                          help='to get barcode number of this particular order')
-    is_return = fields.Boolean(string='Return orders', default=False,
-                               helps='differentiate the pos order and return/ '
-                                     'refund order')
+    barcode = fields.Char(
+        string="Barcode",
+        readonly=True,
+        help="to get barcode number of this particular order",
+    )
+    is_return = fields.Boolean(
+        string="Return orders",
+        default=False,
+        helps="differentiate the pos order and return/ " "refund order",
+    )
 
     @api.model
     def create(self, vals):
         """override the create function to add barcode number in order"""
         res = super().create(vals)
-        reference = res.pos_reference.replace("Order", "").replace(
-            " ", "").replace("-", "")
+        reference = (
+            res.pos_reference.replace("Order", "").replace(" ", "").replace("-", "")
+        )
         res.barcode = reference
         return res
 
     def action_barcode_return(self, barcode):
         """This fn is to search the pos order based on the barcode passed
         from the js and returns true or false"""
-        order = self.env['pos.order'].search([('barcode', '=', barcode),
-                                              ('is_return', '=', False)])
+        order = self.env["pos.order"].search(
+            [("barcode", "=", barcode), ("is_return", "=", False)]
+        )
         if order and order.is_refunded is False:
             return order.id
 
     def _prepare_refund_values(self, current_session):
-        """override this function to pass that the order is return """
+        """override this function to pass that the order is return"""
         res = super()._prepare_refund_values(current_session)
-        res.update({
-            'is_return': True
-        })
+        res.update({"is_return": True})
         return res
