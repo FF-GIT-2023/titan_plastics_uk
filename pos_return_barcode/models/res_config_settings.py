@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 ###############################################################################
 #
 #    Cybrosys Technologies Pvt. Ltd.
@@ -24,10 +23,12 @@ from odoo import fields, models
 
 class ResConfigSettings(models.TransientModel):
     """Adding a new field to res_config_settings model."""
-    _inherit = 'res.config.settings'
+
+    _inherit = "res.config.settings"
 
     point_of_sale_barcode = fields.Boolean(
-        string='Use Barcode on ticket',
-        config_parameter='pos_return_barcode.receipt_barcode',
+        string="Use Barcode on ticket",
+        config_parameter="pos_return_barcode.receipt_barcode",
         help="Add a Barcode on the ticket, which the user can scan to request "
-             "the invoice linked to its order.")
+        "the invoice linked to its order.",
+    )

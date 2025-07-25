@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 #############################################################################
 #
 #    Cybrosys Technologies Pvt. Ltd.
@@ -24,31 +23,33 @@
     "version": "17.0.1.0.0",
     "category": "Themes/Backend",
     "summary": "Outrageous Blue Backend Theme",
-    "description": 'With Dodger Blue Backend Theme dominant Dodger Blue color'
-                   ' palette, the theme exudes a sense of professionalism and '
-                   'clarity, enhancing the overall user interface',
-    'author': 'Cybrosys Techno Solutions',
-    'company': 'Cybrosys Techno Solutions',
-    'maintainer': 'Cybrosys Techno Solutions',
+    "description": "With Dodger Blue Backend Theme dominant Dodger Blue color"
+    " palette, the theme exudes a sense of professionalism and "
+    "clarity, enhancing the overall user interface",
+    "author": "Cybrosys Techno Solutions",
+    "company": "Cybrosys Techno Solutions",
+    "maintainer": "Cybrosys Techno Solutions",
     "website": "https://www.cybrosys.com",
     "data": [
-        'views/login_templates.xml',
+        "views/login_templates.xml",
     ],
-    'assets': {
-        'web.assets_frontend': {
-            'dodger_blue/static/src/scss/theme_style.scss',
+    "assets": {
+        "web.assets_frontend": {
+            "dodger_blue/static/src/scss/theme_style.scss",
         },
-        'web.assets_backend': {
-            'dodger_blue/static/src/js/sidebar_menu.js',
-            'dodger_blue/static/src/scss/theme_style_backend.scss',
-            'dodger_blue/static/src/xml/sidebar_templates.xml',
-            'dodger_blue/static/src/xml/sidebar_menu_icon_templates.xml',
+        "web.assets_backend": {
+            "dodger_blue/static/src/js/sidebar_menu.js",
+            "dodger_blue/static/src/scss/theme_style_backend.scss",
+            "dodger_blue/static/src/xml/sidebar_templates.xml",
+            "dodger_blue/static/src/xml/sidebar_menu_icon_templates.xml",
         },
     },
-    'images': ['static/description/banner.jpg',
-               'static/description/theme_screenshot.jpg'],
-    'license': 'LGPL-3',
-    'installable': True,
-    'auto_install': False,
-    'application': False,
+    "images": [
+        "static/description/banner.jpg",
+        "static/description/theme_screenshot.jpg",
+    ],
+    "license": "LGPL-3",
+    "installable": True,
+    "auto_install": False,
+    "application": False,
 }
